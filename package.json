@@ -1,0 +1,33 @@
+{
+  "name": "session.hacklunch",
+  "version": "1.0.0",
+  "description": "session module for the hacklunch project",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pullstream/session.hacklunch.git"
+  },
+  "keywords": [],
+  "author": "davy@pullstream.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pullstream/session.hacklunch/issues"
+  },
+  "homepage": "https://github.com/pullstream/session.hacklunch#readme",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-mocks": "^1.5.0",
+    "angular-ui-router": "^0.2.18"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "css-loader": "^0.23.1",
+    "html-loader": "^0.4.3",
+    "style-loader": "^0.13.0"
+  }
+}
