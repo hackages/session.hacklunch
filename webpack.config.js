@@ -28,7 +28,6 @@ module.exports = {
         loader: 'style-loader!css-loader',
         exclude: /node_modules/
       }
-
     ]
   }
 };
