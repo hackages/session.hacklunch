@@ -1,13 +1,21 @@
 'use strict';
 
-let path = require('path');
+let path    = require('path');
+let webpack = require('webpack');
 
 module.exports = {
-  entry: './app/index',
+  devtool: 'source-map',
+  entry: {
+   index: './app/index',
+   vendor: ['angular']
+  },
   output: {
     filename: 'index.js',
     path: path.join(__dirname, 'dist')
   },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")
+  ],
   module: {
     loaders: [
       {
