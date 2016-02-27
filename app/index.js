@@ -1,9 +1,11 @@
-import angular, {module, bootstrap} from 'angular';
+import angular from 'angular';
 
-import sessionsComponents           from '../components/sessions/';
-import sessionComponents            from '../components/session/';
+import sessionsComponent from '../components/sessions/';
+console.log(sessionsComponent);
 
-export default  module('hl.sessions', [])
-  .component('hlSessions', sessionsComponents)
-  .component('hlSession', sessionComponents).name;
+import sessionComponent  from '../components/session/';
+console.log(sessionComponent);
+
+export default angular.module('hl.sessions', [sessionsComponent, sessionComponent]).name;
+
 
